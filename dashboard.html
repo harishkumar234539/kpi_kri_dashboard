@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body onload="loadDashboard()">
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>Menu</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="employees.html">Employees</a>
+<a href="departments.html">Departments</a>
+<a href="kpi.html">KPI Dashboard</a>
+<a href="kri.html">KRI Dashboard</a>
+<a href="login.html">Logout</a>
+
+</div>
+
+
+<div class="main">
+
+<h1>Performance Dashboard</h1>
+
+<div class="charts">
+
+<div class="chartBox">
+<canvas id="kpiChart"></canvas>
+</div>
+
+<div class="chartBox">
+<canvas id="kriChart"></canvas>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

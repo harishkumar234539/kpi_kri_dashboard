@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Employees Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body onload="loadEmployees()">
+
+<h1>Employees Performance Dashboard</h1>
+
+<div class="filter">
+
+<label>Select Department:</label>
+
+<select id="departmentSelect" onchange="filterDepartment()">
+
+<option value="All">All</option>
+<option value="IT">IT</option>
+<option value="HR">HR</option>
+<option value="Finance">Finance</option>
+<option value="Sales">Sales</option>
+
+</select>
+
+</div>
+
+<h2>Employees List</h2>
+
+<table border="1" width="80%" align="center">
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Department</th>
+<th>KPI</th>
+<th>KRI</th>
+</tr>
+</thead>
+
+<tbody id="employeeTable">
+</tbody>
+
+</table>
+
+
+<div class="charts">
+
+<div class="chartBox">
+<canvas id="kpiChart"></canvas>
+</div>
+
+<div class="chartBox">
+<canvas id="kriChart"></canvas>
+</div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
